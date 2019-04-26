@@ -1,0 +1,117 @@
+@import './fonts.scss';
+@import '~antd/dist/antd.css';
+/*** Z-Index Scale ***/
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;
+
+/*** Colors ***/
+$red: rgb(255, 53, 37);
+$green : rgb(101, 255, 123);
+$grayTone: rgb(123, 127, 139);
+$darkShadow: rgb(25, 26, 33);
+$darkFill: rgb(40, 42, 54);
+$darkAccent: rgb(25, 26, 33);
+$sfColor: rgb(4, 145, 166);
+
+/*** Resets ***/
+html, body {
+  margin: 0px;
+  color: $darkFill;
+  padding: 0px;
+  display: block;
+  height: 100%;
+  background: white;
+}
+
+#app-container {
+  min-height: 100vh;
+  background: white;
+  background-size: cover;
+}
+
+input[type="date"] {
+  width: 100%;
+}
+/*** ui components ***/
+
+.error-msg {
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/*** header ***/
+
+header {
+  width: 100%;
+}
+/*** Content ***/
+.app-content {
+  display: flex;
+  flex-direction: row;
+  min-height: 80vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.section-flow {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  margin-top: -60px;
+}
+
+.crypto-container {
+  max-width: 100%;
+  padding: 30px;
+}
+
+.crypto-section {
+  min-width: 300px;
+  margin: 30px 0px;
+}
+
+div.VictoryContainer {
+  min-width: 300px;
+}
+
+div.ant-card.ant-card-bordered{
+  margin: 10px 0px;
+  max-width: calc(100vw - 30px);
+}
+
+header.ant-layout-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+button.ant-btn-primary {
+  background: $sfColor;
+  border: 0px;
+
+  &:hover {
+    background-color: #001529;;
+  }
+}
+
